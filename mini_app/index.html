@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnyChars</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Экран каталога -->
+        <div id="catalog-screen">
+            <div class="header">
+                <h1>🎭 AnyChars</h1>
+                <p class="subtitle">Выбери персонажа для общения</p>
+            </div>
+            <input type="text" id="search" class="search-bar" placeholder="🔍 Поиск персонажа...">
+            <div id="catalog" class="catalog"></div>
+        </div>
+
+        <!-- Экран чата (скрыт по умолчанию) -->
+        <div id="chat-screen" class="hidden">
+            <div class="chat-header">
+                <button id="back-btn" class="back-btn">←</button>
+                <img id="chat-avatar" src="" alt="" class="chat-avatar-img">
+                <div class="chat-header-info">
+                    <div id="chat-name" class="chat-name"></div>
+                    <div class="chat-status">● онлайн</div>
+                </div>
+            </div>
+            <div id="messages" class="messages"></div>
+            <div class="input-area">
+                <input type="text" id="msg-input" placeholder="Напиши сообщение..." autocomplete="off">
+                <button id="send-btn">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
