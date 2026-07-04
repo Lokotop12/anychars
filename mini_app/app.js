@@ -5,7 +5,7 @@ tg.ready();
 
 // Состояние
 let currentCharacter = null;
-const API_URL = 'https://anychars-api.onrender.com';
+const API_URL = 'https://harmonize-panning-radiance.ngrok-free.dev';
 
 // DOM-элементы
 const catalogScreen = document.getElementById('catalog-screen');
