@@ -3,7 +3,7 @@ tg.expand();
 tg.ready();
 
 let currentCharacter = null;
-const API_URL = 'https://harmonize-panning-radiance.ngrok-free.dev';
+const API_URL = '/api';
 const HEADERS = { "ngrok-skip-browser-warning": "true" };
 
 const catalogScreen = document.getElementById('catalog-screen');

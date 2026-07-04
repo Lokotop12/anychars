@@ -1,0 +1,19 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://harmonize-panning-radiance.ngrok-free.dev/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "ngrok-skip-browser-warning",
+          "value": "true"
+        }
+      ]
+    }
+  ]
+}
