@@ -5,7 +5,7 @@ tg.ready();
 
 // Состояние
 let currentCharacter = null;
-const API_URL = 'http://localhost:8000'; // Заменить на реальный URL после деплоя
+const API_URL = 'https://anychars-api.onrender.com';
 
 // DOM-элементы
 const catalogScreen = document.getElementById('catalog-screen');
